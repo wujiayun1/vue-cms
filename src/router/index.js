@@ -5,6 +5,7 @@ import memberContainer from '../pages/member'
 import searchContainer from '../pages/search'
 import shopcarContainer from '../pages/shopcar'
 import newListContainer from '../pages/newsList'
+import newInfoContainer from '../pages/newsInfo'
 // 1.2 安装路由
 Vue.use(Router)
 
@@ -15,7 +16,8 @@ export default new Router({
         {path:'/member',component:memberContainer},
         {path:'/search',component:searchContainer},
         {path:'/shopcar',component:shopcarContainer},
-        {path:'/home/newsList',component:newListContainer}
+        {path:'/home/newsList',component:newListContainer},
+        {path:'/home/newsInfo/:id',component:newInfoContainer}
     ],
     linkActiveClass:'mui-active'
 
