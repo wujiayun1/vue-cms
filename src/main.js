@@ -29,6 +29,9 @@ Vue.filter('dateFormat',(content,pattern = 'YYYY-MM-DD HH:mm:ss')=>{
 }
 
 )
+import comment from './components/common/comment'
+// 定义全局组件, 参数1: 组件名 决定了将来如何使用 参数2: 组件对象
+Vue.component('comment',comment)
 
 /* eslint-disable no-new */
  new Vue({

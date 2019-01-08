@@ -4,7 +4,7 @@
        <h3 class="title">{{newsinfo.title}}</h3>
        <!-- 子标题 -->
        <p class="subtitle">
-           <span>发表时间：{{newsinfo.add_time}}</span>
+           <span>发表时间：{{newsinfo.add_time|dateFormat}}</span>
            <span>点击:{{newsinfo.click}}次</span>
        </p>
        <hr>
@@ -14,7 +14,8 @@
 
        </div>
 
-       <!--  -->
+       <!--评论子组件  -->
+       <comment :id="this.id"></comment>
     </div>
 </template>
 <script>
