@@ -7,6 +7,7 @@ import shopcarContainer from '../pages/shopcar'
 import newListContainer from '../pages/newsList'
 import newInfoContainer from '../pages/newsInfo'
 import goodsListContainer from '../pages/goodsList'
+import goodsInfoContainer from '../pages/goodsInfo'
 // 1.2 安装路由
 Vue.use(Router)
 
@@ -19,7 +20,9 @@ export default new Router({
         {path:'/shopcar',component:shopcarContainer},
         {path:'/home/newsList',component:newListContainer},
         {path:'/home/newsInfo/:id',component:newInfoContainer},
-        {path:'/home/goodsList',component:goodsListContainer}
+        {path:'/home/goodsList',component:goodsListContainer},
+        {path:'/home/goodsInfo/:id',component:goodsInfoContainer,name:'goodsInfo'},
+
     ],
     linkActiveClass:'mui-active'
 
