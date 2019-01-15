@@ -8,6 +8,8 @@ import newListContainer from '../pages/newsList'
 import newInfoContainer from '../pages/newsInfo'
 import goodsListContainer from '../pages/goodsList'
 import goodsInfoContainer from '../pages/goodsInfo'
+import goodsDescContainer from '../pages/goodsDesc'
+import goodsCommentContainer from '../pages/goodsComment'
 // 1.2 安装路由
 Vue.use(Router)
 
@@ -22,6 +24,8 @@ export default new Router({
         {path:'/home/newsInfo/:id',component:newInfoContainer},
         {path:'/home/goodsList',component:goodsListContainer},
         {path:'/home/goodsInfo/:id',component:goodsInfoContainer,name:'goodsInfo'},
+        {path:'/home/goodsDesc/:id',component:goodsDescContainer,name:'goodsDesc'},
+        {path:'/home/goodsComment/:id',component:goodsCommentContainer,name:'goodsComment'},
 
     ],
     linkActiveClass:'mui-active'

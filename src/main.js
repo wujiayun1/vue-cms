@@ -21,6 +21,7 @@ Vue.http.options.root='http://www.lovegf.cn:8899/'
 // 配置默认的post提交数据类型为传统表单
 Vue.http.options.emulateJSON = true
 
+import store from './store'
 // 导入moment包
 import moment from 'moment'
 // 定义全局过滤器:dateFormat
@@ -37,5 +38,6 @@ Vue.component('comment',comment)
  new Vue({
   el: '#app',
   router,
+  store,
  render:h=>h(App)
 })
