@@ -1,6 +1,6 @@
 # vu-cms22
 
-> 这是一个高端项目
+> vue
 
 ## Build Setup
 
